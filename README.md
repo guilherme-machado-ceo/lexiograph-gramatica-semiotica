@@ -2,7 +2,7 @@
 
 <!-- Futuristic banner -->
 <p align="center">
-  <img src="assets/banner.svg" alt="Lexiograph Futuristic Banner" width="100%" />
+  <img src="assets/banner.svg" alt="Lexiograph Futuristic Banner" width="100%" style="pointer-events: none; user-select: none;" />
 </p>
 
 <!-- Badges -->
@@ -149,20 +149,6 @@ Futuramente:
 2. Biblioteca de ícones e componentes semióticos.
 3. Modelos de documentação e mapas sistêmicos.
 4. Protótipo de site/documentação (Lex Quantum).
-
----
-
-## Logo Girando
-
-<p align="center">
-  <img src="assets/separator.svg" alt="Separator" width="100%" />
-</p>
-
-<p align="center">
-  <img src="assets/logo-rotate.svg" alt="Logo rotacionando (SVG)" width="220" />
-</p>
-
-> Caso precise de um GIF (fallback em ambientes sem suporte a SVG animado), podemos adicionar `assets/logo-rotate.gif` exportado a partir do SVG.
 
 ---
 
