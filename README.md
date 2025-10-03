@@ -1,78 +1,9 @@
 # Lexiograph: Gramática Semiótica dos Sistemas Digitais
 
 <!-- Futuristic banner -->
-<p align="center">
-  <!-- Banner inline para evitar clique / redirecionamento -->
-  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 400">
-    <defs>
-      <radialGradient id="bg" cx="50%" cy="50%" r="75%">
-        <stop offset="0%" stop-color="#05070d"/>
-        <stop offset="60%" stop-color="#0a0f1f"/>
-        <stop offset="100%" stop-color="#0b1228"/>
-      </radialGradient>
-      <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#00eaff"/>
-        <stop offset="50%" stop-color="#9b5cf6"/>
-        <stop offset="100%" stop-color="#ff2ef2"/>
-      </linearGradient>
-      <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
-        <feGaussianBlur stdDeviation="6" result="blur"/>
-        <feMerge>
-          <feMergeNode in="blur"/>
-          <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-      </filter>
-    </defs>
-
-    <!-- Background -->
-    <rect x="0" y="0" width="1200" height="400" fill="url(#bg)"/>
-
-    <!-- Grid -->
-    <g stroke="#1c2a4a" stroke-width="1.25" opacity="0.45">
-      <path d="M60 0 V400 M120 0 V400 M180 0 V400 M240 0 V400 M300 0 V400 M360 0 V400 M420 0 V400 M480 0 V400 M540 0 V400 M600 0 V400 M660 0 V400 M720 0 V400 M780 0 V400 M840 0 V400 M900 0 V400 M960 0 V400 M1020 0 V400 M1080 0 V400 M1140 0 V400"/>
-      <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200 M0 300 H1200 M0 360 H1200"/>
-    </g>
-
-    <!-- Concentric circles -->
-    <g stroke="#253660" stroke-width="3" opacity="0.6" filter="url(#glow)">
-      <circle cx="600" cy="200" r="200" fill="none"/>
-      <circle cx="600" cy="200" r="150" fill="none"/>
-      <circle cx="600" cy="200" r="100" fill="none"/>
-    </g>
-
-    <!-- Neon diagonal line -->
-    <g filter="url(#glow)">
-      <path d="M120 330 L1080 70" stroke="url(#neon)" stroke-width="5" fill="none" opacity="0.95"/>
-    </g>
-
-    <!-- Title / Signature -->
-    <g text-anchor="middle" font-family="Orbitron, Roboto, Segoe UI, Arial, sans-serif" fill="#dff6ff">
-      <text x="600" y="108" font-size="56" font-weight="800">Lexiograph</text>
-      <text x="600" y="150" font-size="20" fill="#a6d6ff">Gramática Semiótica dos Sistemas Digitais</text>
-    </g>
-
-    <!-- Central logo + rings -->
-    <g transform="translate(600,210)" filter="url(#glow)">
-      <!-- logo como imagem vetorial referenciada -->
-      <image href="assets/lexiograph-logo.svg" x="-90" y="-90" width="180" height="180" preserveAspectRatio="xMidYMid meet"/>
-      <!-- rotating rings around logo -->
-      <g>
-        <circle r="100" fill="none" stroke="#00eaff" stroke-width="3.5" opacity="0.9"/>
-        <circle r="70" fill="none" stroke="#9b5cf6" stroke-width="3.5" opacity="0.9"/>
-        <circle r="40" fill="none" stroke="#ff2ef2" stroke-width="3.5" opacity="0.9"/>
-        <circle cx="100" cy="0" r="5" fill="#00eaff"/>
-        <circle cx="0" cy="70" r="4.5" fill="#9b5cf6"/>
-        <circle cx="-40" cy="0" r="4" fill="#ff2ef2"/>
-      </g>
-      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 0 0" to="360 0 0" dur="18s" repeatCount="indefinite"/>
-    </g>
-
-    <!-- Tagline -->
-    <g text-anchor="middle" font-family="Roboto, Segoe UI, Arial, sans-serif" fill="#aaf0ff">
-      <text x="600" y="350" font-size="17" opacity="0.95">Lex • IO • Graph — Compliance Digital, Interação Sistêmica e Grafos de Conhecimento</text>
-    </g>
-  </svg>
-</p>
+<div align="center" style="pointer-events: none; user-select: none;">
+  <img src="assets/banner.svg" alt="Lexiograph Futuristic Banner" width="100%" />
+</div>
 
 <!-- Badges -->
 <p align="center">
