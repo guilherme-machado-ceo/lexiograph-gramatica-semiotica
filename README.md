@@ -1,9 +1,6 @@
 # Lexiograph: Gramática Semiótica dos Sistemas Digitais
 
-<!-- Futuristic banner -->
-<div align="center" style="pointer-events: none; user-select: none;">
-  [![Lexiograph Futuristic Banner](assets/banner.svg)](#)
-</div>
+[![Lexiograph Futuristic Banner](assets/banner.svg)](#)
 
 <!-- Badges -->
 <p align="center">
