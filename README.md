@@ -26,6 +26,26 @@ Com a assinatura Lex Quantum, propomos uma nova forma de pensar e visualizar o d
 
 ## Visão Geral
 
+<p align="center">
+  <svg width="100%" height="6" viewBox="0 0 1200 6" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sep-neon" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00eaff"/>
+        <stop offset="50%" stop-color="#9b5cf6"/>
+        <stop offset="100%" stop-color="#ff2ef2"/>
+      </linearGradient>
+      <filter id="sep-glow" x="-80%" y="-80%" width="260%" height="260%">
+        <feGaussianBlur stdDeviation="2" result="blur"/>
+        <feMerge>
+          <feMergeNode in="blur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <rect x="0" y="2" width="1200" height="2" fill="url(#sep-neon)" filter="url(#sep-glow)" />
+  </svg>
+</p>
+
 Na era da hiperconectividade, a Lexiograph propõe uma gramática semiótica para interpretar e representar sistemas digitais: unindo governança algorítmica (Lex), fluxos de dados e interação (IO) e grafos de conhecimento (Graph).
 
 Nossa abordagem oferece uma estrutura conceitual e visual para mapear, codificar e comunicar sistemas complexos com clareza, interoperabilidade e profundidade simbólica.
@@ -33,6 +53,10 @@ Nossa abordagem oferece uma estrutura conceitual e visual para mapear, codificar
 ---
 
 ## Decomposição Semiótica
+
+<p align="center">
+  <img src="assets/separator.svg" alt="Separator" width="100%" />
+</p>
 
 ### Lex — Lei, Compliance, Governança Digital
 - Princípios éticos e regulatórios aplicados a sistemas e algoritmos.
@@ -52,6 +76,10 @@ Nossa abordagem oferece uma estrutura conceitual e visual para mapear, codificar
 ---
 
 ## Lex Quantum
+
+<p align="center">
+  <img src="assets/separator.svg" alt="Separator" width="100%" />
+</p>
 A assinatura Lex Quantum é o selo que integra rigor técnico e estética semiótica. Ela orienta soluções que interpretam, codificam e comunicam sistemas complexos com precisão, beleza e significado.
 
 - Design de informação + engenharia semiótica.
@@ -61,6 +89,10 @@ A assinatura Lex Quantum é o selo que integra rigor técnico e estética semió
 ---
 
 ## Proposta de Valor
+
+<p align="center">
+  <img src="assets/separator.svg" alt="Separator" width="100%" />
+</p>
 - Traduzir sistemas em linguagem visual e semiótica.
 - Aumentar clareza, confiança e governança em plataformas digitais.
 - Facilitar interoperabilidade e documentação viva de sistemas.
@@ -68,6 +100,10 @@ A assinatura Lex Quantum é o selo que integra rigor técnico e estética semió
 ---
 
 ## Aplicações
+
+<p align="center">
+  <img src="assets/separator.svg" alt="Separator" width="100%" />
+</p>
 - Mapas de arquitetura de software e dados.
 - Catálogos de APIs, fluxos de eventos e integrações.
 - Grafos de conhecimento e navegação semântica.
@@ -77,6 +113,10 @@ A assinatura Lex Quantum é o selo que integra rigor técnico e estética semió
 ---
 
 ## Princípios
+
+<p align="center">
+  <img src="assets/separator.svg" alt="Separator" width="100%" />
+</p>
 - Clareza: visual e conceitual.
 - Ética: governança e responsabilidade algorítmica.
 - Interoperabilidade: padrões abertos e reutilização.
@@ -85,6 +125,10 @@ A assinatura Lex Quantum é o selo que integra rigor técnico e estética semió
 ---
 
 ## Estrutura do Repositório
+
+<p align="center">
+  <img src="assets/separator.svg" alt="Separator" width="100%" />
+</p>
 
 - `assets/lexiograph-logo.svg`: logomarca vetorial da Lexiograph (Lex + IO + Graph).
 - `README.md`: visão geral, manifesto e fundamentos da gramática semiótica.
@@ -97,6 +141,10 @@ Futuramente:
 ---
 
 ## Roadmap (sugestão)
+
+<p align="center">
+  <img src="assets/separator.svg" alt="Separator" width="100%" />
+</p>
 1. Padronização visual dos elementos Lex, IO e Graph.
 2. Biblioteca de ícones e componentes semióticos.
 3. Modelos de documentação e mapas sistêmicos.
@@ -105,6 +153,10 @@ Futuramente:
 ---
 
 ## Como Contribuir
+
+<p align="center">
+  <img src="assets/separator.svg" alt="Separator" width="100%" />
+</p>
 - Abra issues com propostas e feedback.
 - Sugira símbolos, ontologias e estruturas visuais.
 - Envie PRs com exemplos, melhorias e arquivos SVG.
@@ -112,4 +164,8 @@ Futuramente:
 ---
 
 ## Licença
+
+<p align="center">
+  <img src="assets/separator.svg" alt="Separator" width="100%" />
+</p>
 Este projeto está licenciado sob a Apache License 2.0. Consulte o arquivo LICENSE para o texto completo.
