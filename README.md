@@ -1,5 +1,17 @@
 # Lexiograph: Gramática Semiótica dos Sistemas Digitais
 
+<!-- Futuristic banner -->
+<p align="center">
+  <img src="assets/banner.svg" alt="Lexiograph Futuristic Banner" width="100%" />
+</p>
+
+<!-- Badges -->
+<p align="center">
+  <a href="https://guilherme-machado-ceo.github.io/lexiograph-gramatica-semiotica/"><img alt="Pages" src="https://img.shields.io/badge/GitHub%20Pages-published-0aefff?logo=github&logoColor=white"></a>
+  <a href="https://github.com/guilherme-machado-ceo/lexiograph-gramatica-semiotica/actions"><img alt="Actions" src="https://img.shields.io/badge/Actions-Deploy%20Pages-9b5cf6?logo=githubactions&logoColor=white"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-ff2ef2"></a>
+</p>
+
 Lexiograph é mais do que uma marca — é uma linguagem. Uma gramática visual que emerge da interseção entre compliance digital, interação sistêmica e estruturação do conhecimento.
 
 Ao decompor Lexiograph = Lex + IO + Graph, revelamos uma arquitetura semiótica que traduz sistemas digitais em signos, fluxos e grafos.
