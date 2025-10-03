@@ -12,11 +12,11 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Roboto', sans-serif; background-color: #0a0a0f; color: #ffffff; overflow-x: hidden; }
+    body { font-family: 'Roboto', sans-serif; background: linear-gradient(135deg, #0a0a1f 0%, #12122a 25%, #151535 50%, #0f0f2a 75%, #0a0a1f 100%); color: #ffffff; overflow-x: hidden; }
 
     .poster-container { width: 720px; min-height: 960px; margin: 0 auto; position: relative; background: linear-gradient(135deg, #0a0a1f 0%, #12122a 25%, #151535 50%, #0f0f2a 75%, #0a0a1f 100%); overflow: hidden; }
-    .bg-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(0, 150, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 150, 255, 0.05) 1px, transparent 1px); background-size: 20px 20px; z-index: 1; }
-    .bg-circles { position: absolute; inset: 0; z-index: 2; }
+    .bg-grid { position: fixed; inset: 0; background-image: linear-gradient(rgba(0, 150, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 150, 255, 0.05) 1px, transparent 1px); background-size: 20px 20px; z-index: 1; }
+    .bg-circles { position: fixed; inset: 0; z-index: 2; pointer-events: none; }
     .circle { position: absolute; border-radius: 50%; filter: blur(40px); opacity: 0.15; }
     .circle-1 { width: 300px; height: 300px; background: #0066ff; top: -50px; right: -50px; }
     .circle-2 { width: 200px; height: 200px; background: #00ccff; bottom: 100px; left: -50px; }
