@@ -2,7 +2,7 @@
 
 <!-- Futuristic banner -->
 <div align="center" style="pointer-events: none; user-select: none;">
-  <img src="assets/banner.svg" alt="Lexiograph Futuristic Banner" width="100%" />
+  [![Lexiograph Futuristic Banner](assets/banner.svg)](#)
 </div>
 
 <!-- Badges -->
