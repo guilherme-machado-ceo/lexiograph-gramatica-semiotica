@@ -152,20 +152,14 @@ Futuramente:
 
 ---
 
-## Como Contribuir
+## Logo Girando
 
 <p align="center">
   <img src="assets/separator.svg" alt="Separator" width="100%" />
 </p>
-- Abra issues com propostas e feedback.
-- Sugira símbolos, ontologias e estruturas visuais.
-- Envie PRs com exemplos, melhorias e arquivos SVG.
-
----
-
-## Licença
 
 <p align="center">
-  <img src="assets/separator.svg" alt="Separator" width="100%" />
+  <img src="assets/logo-rotate.svg" alt="Logo rotacionando (SVG)" width="220" />
 </p>
-Este projeto está licenciado sob a Apache License 2.0. Consulte o arquivo LICENSE para o texto completo.
+
+> Caso precise de um GIF (fallback em ambientes sem suporte a SVG animado), podemos adicionar `assets/logo-rotate.gif` exportado a partir do SVG.

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#06090f"/>
+      <stop offset="60%" stop-color="#0a0f1f"/>
+      <stop offset="100%" stop-color="#0b1228"/>
+    </radialGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00eaff"/>
+      <stop offset="50%" stop-color="#9b5cf6"/>
+      <stop offset="100%" stop-color="#ff2ef2"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark background -->
+  <rect x="0" y="0" width="256" height="256" fill="url(#bg)"/>
+
+  <!-- Central logo (static) -->
+  <g transform="translate(128,128)">
+    <image href="lexiograph-logo.svg" x="-56" y="-56" width="112" height="112" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+
+  <!-- Rotating neon ring -->
+  <g transform="translate(128,128)" filter="url(#glow)">
+    <circle r="80" fill="none" stroke="url(#neon)" stroke-width="4" opacity="0.95"/>
+    <circle cx="80" cy="0" r="5" fill="#00eaff"/>
+    <circle cx="0" cy="80" r="4.5" fill="#9b5cf6"/>
+    <circle cx="-80" cy="0" r="4" fill="#ff2ef2"/>
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 0 0" to="360 0 0" dur="3s" repeatCount="indefinite"/>
+  </g>
+</svg>
