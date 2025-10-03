@@ -101,8 +101,8 @@
       .purpose-desc { font-size: 16px; line-height: 1.6; }
       @media (prefers-reduced-motion: reduce) { .logo-3d { animation: none; } }
       /* Rotação 3D profunda para a logomarca enviada */
-      .logo-3d-wrap { perspective: 800px; isolation: isolate; background: radial-gradient(1200px 600px at 20% 0%, #0f172a 0%, #0b1220 60%, #080d18 100%); background-attachment: fixed; }
-      .logo-3d-deep { display:inline-block; width:250px; height:auto; transform-style:preserve-3d; animation: logo-revolve-3d 22s ease-in-out infinite; filter: drop-shadow(0 10px 26px rgba(0, 204, 255, 0.30)) saturate(1.1) brightness(1.03); background: transparent; }
+      .logo-3d-wrap { perspective: 800px; isolation: isolate; background: transparent; }
+      .logo-3d-deep { display:inline-block; width:250px; height:auto; transform-style:preserve-3d; animation: logo-revolve-3d 22s ease-in-out infinite; filter: drop-shadow(0 6px 16px rgba(0, 204, 255, 0.22)) saturate(1.06) brightness(1.02); background: transparent; clip-path: circle(44% at 50% 50%); }
       @keyframes logo-revolve-3d {
         0%   { transform: rotateY(0deg) rotateX(22deg) rotateZ(0deg); }
         25%  { transform: rotateY(90deg) rotateX(26deg) rotateZ(2deg); }
