@@ -1,6 +1,6 @@
 # Lexiograph: Gramática Semiótica dos Sistemas Digitais
 
-[![Lexiograph Futuristic Banner](assets/banner.svg)](#)
+[![Lexiograph Futuristic Banner](assets/banner.svg)](https://github.com/guilherme-machado-ceo/lexiograph-gramatica-semiotica#)
 
 <!-- Badges -->
 <p align="center">
