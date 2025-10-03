@@ -100,4 +100,4 @@ Futuramente:
 ---
 
 ## Licença
-Defina a licença desejada (MIT, Apache-2.0, etc.). Por padrão, este repositório não inclui licença.
+Este projeto está licenciado sob a Apache License 2.0. Consulte o arquivo LICENSE para o texto completo.
