@@ -72,6 +72,29 @@
       footer { color: var(--muted); text-align: center; margin-top: 24px; }
       @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
 
+      .section--cta {
+        text-align: center;
+        padding: 4rem 2rem;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.75rem 2rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: opacity 0.2s ease;
+      }
+
+      .btn--primary {
+        background-color: var(--accent, #6c63ff);
+        color: #fff;
+      }
+
+      .btn--primary:hover {
+        opacity: 0.85;
+      }
+
       /* Logo rotacionando sem moldura e sem fundo */
       .logo-3d-wrap { perspective: 800px; isolation: isolate; background: transparent; }
       .logo-3d-deep { display:inline-block; width:250px; height:auto; transform-style:preserve-3d; animation: logo-revolve-3d 22s ease-in-out infinite; filter: drop-shadow(0 6px 16px rgba(0, 204, 255, 0.22)) saturate(1.06) brightness(1.02); background: transparent; }
@@ -108,7 +131,7 @@
              <div>
                <h1>Lexiograph</h1>
                <div class="neon-line"></div>
-               <div class="subtitle">Gramática Semiótica dos Sistemas Digitais · Lex Quantum</div>
+               <div class="subtitle">Design full service para sistemas que exigem ser compreendidos.</div>
              </div>
            </div>
         </header>
@@ -164,11 +187,29 @@
 
       <aside>
         <section class="section">
-          <h2>Proposta de Valor</h2>
+          <h2>O que a Lexiograph entrega</h2>
+          <p>
+            Você tem um sistema complexo — técnico, regulatório ou conceitual — e precisa que
+            ele seja compreendido: por clientes, investidores, reguladores ou pela sua própria
+            equipe. A Lexiograph transforma essa complexidade em linguagem visual operável.
+          </p>
           <ul>
-            <li>Traduzir sistemas em linguagem visual e semiótica.</li>
-            <li>Aumentar clareza, confiança e governança em plataformas digitais.</li>
-            <li>Facilitar interoperabilidade e documentação viva de sistemas.</li>
+            <li>
+              <strong>Identidade visual sistêmica</strong> — sistemas de design que refletem
+              a arquitetura real do seu produto ou organização, não apenas sua estética.
+            </li>
+            <li>
+              <strong>Documentação viva</strong> — mapas de arquitetura, catálogos de API,
+              grafos de conhecimento e fluxos de dados que se mantêm atualizados e navegáveis.
+            </li>
+            <li>
+              <strong>Comunicação de governança</strong> — dashboards, relatórios e narrativas
+              visuais para compliance, auditoria e comunicação executiva.
+            </li>
+            <li>
+              <strong>Narrativa técnica</strong> — materiais de pitch, whitepapers e
+              apresentações que traduzem profundidade técnica em linguagem de decisão.
+            </li>
           </ul>
         </section>
 
@@ -184,13 +225,33 @@
         </section>
 
         <section class="section" style="margin-top:16px">
-          <h2>Roadmap</h2>
-          <ol class="roadmap">
-            <li>Padronização visual dos elementos Lex, IO e Graph.</li>
-            <li>Biblioteca de ícones e componentes semióticos.</li>
-            <li>Modelos de documentação e mapas sistêmicos.</li>
-            <li>Protótipo de site/documentação (Lex Quantum).</li>
+          <h2>Como trabalhamos</h2>
+          <p>
+            Cada projeto começa por uma leitura semiótica do sistema do cliente — entendendo
+            sua arquitetura, seus públicos e os signos que já circulam (ou que deveriam circular)
+            em torno dele. A partir daí, construímos em camadas:
+          </p>
+          <ol>
+            <li><strong>Diagnóstico semiótico</strong> — mapeamento da identidade, linguagem e
+            lacunas comunicacionais do sistema.</li>
+            <li><strong>Arquitetura visual</strong> — definição dos elementos Lex, IO e Graph
+            aplicados ao contexto específico do cliente.</li>
+            <li><strong>Produção e entrega</strong> — execução full service: identidade,
+            documentação, interfaces, narrativas e materiais de governança.</li>
+            <li><strong>Manutenção viva</strong> — atualização contínua dos artefatos conforme
+            o sistema evolui.</li>
           </ol>
+        </section>
+
+        <section id="contato" class="section section--cta">
+          <h2>Vamos trabalhar juntos?</h2>
+          <p>
+            Se você tem um sistema complexo que precisa ser comunicado com clareza,
+            precisão e profundidade — a Lexiograph é o seu interlocutor.
+          </p>
+          <a href="mailto:globaldeeptechecosystem@hubstry.dev" class="btn btn--primary">
+            Iniciar conversa →
+          </a>
         </section>
 
         <footer>
