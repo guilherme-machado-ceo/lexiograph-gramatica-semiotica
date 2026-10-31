@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
-// Configuração para GitHub Pages subpath
+// Domínio próprio: lexiograph-design-fullservice.hubstry.dev (servido na raiz)
 export default defineConfig({
-  base: '/lexiograph-gramatica-semiotica/',
+  base: '/',
   build: {
     rollupOptions: {
       input: {
