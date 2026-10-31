@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://lexiograph-design-fullservice.hubstry.dev/">
-    <img src="assets/logomarca-lexiograph.png" alt="Logomarca Lexiograph: glifo caligráfico em verde-azulado metálico sobre fundo escuro" width="100%" />
+    <img src="assets/capa-lexiograph.png" alt="Capa Lexiograph: glifo caligráfico, nome LEXIOGRAPH e a tagline Design - Full Service, espaço infinito de possível" width="100%" />
   </a>
 </p>
 
