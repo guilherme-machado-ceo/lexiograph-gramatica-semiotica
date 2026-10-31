@@ -1,0 +1,1194 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serviços | Lexiograph Design Full Service</title>
+    <meta name="description" content="Lexiograph Design Full Service: 15 campos e 75 serviços de design, da pesquisa e identidade visual ao web design, UX/UI, motion e desenvolvimento front-end." />
+    <link rel="icon" href="assets/lexiograph-logo.svg" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0a0a0f;
+        --panel: #0F172A;
+        --text: #E2E8F0;
+        --muted: #A3B1C2;
+        --accent: #00ccff;
+        --teal: #7FD1CC;
+        --line: rgba(255,255,255,0.1);
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: 'Roboto', system-ui, -apple-system, Segoe UI, sans-serif;
+        background: linear-gradient(135deg, #0a0a1f 0%, #12122a 25%, #151535 50%, #0f0f2a 75%, #0a0a1f 100%);
+        background-attachment: fixed;
+        color: var(--text);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+      .bg-grid { position: fixed; inset: 0; background-image: linear-gradient(rgba(0, 150, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 150, 255, 0.05) 1px, transparent 1px); background-size: 20px 20px; z-index: 0; pointer-events: none; }
+      .wrap { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 32px 20px 80px; }
+      a { color: var(--accent); }
+      .topo { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+      .topo a { text-decoration: none; font-weight: 600; }
+      header {
+        display: flex; align-items: center; gap: 32px; flex-wrap: wrap;
+        padding: 32px; border-radius: 16px;
+        background: linear-gradient(180deg, rgba(34,211,238,0.12), rgba(99,102,241,0.08));
+        border: 1px solid rgba(99,102,241,0.22);
+      }
+      header img { width: 110px; height: auto; flex: 0 0 auto; }
+      .header-texto { flex: 1 1 420px; min-width: 0; }
+      h1 { font-family: 'Orbitron', sans-serif; font-size: clamp(26px, 4vw, 40px); margin: 0; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text); }
+      .tagline { font-family: 'Orbitron', sans-serif; font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--teal); margin-top: 10px; }
+      .neon-line { width: 120px; height: 2px; background: linear-gradient(90deg, transparent, #00ccff, transparent); margin: 16px 0; }
+      .lead p { margin: 0 0 12px; color: var(--text); }
+      .lead p:last-child { margin-bottom: 0; }
+      .numeros { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 20px; }
+      .numero { font-family: 'Orbitron', sans-serif; font-size: 28px; font-weight: 700; color: var(--accent); line-height: 1; }
+      .numero small { display: block; font-family: 'Roboto', sans-serif; font-size: 13px; font-weight: 400; letter-spacing: 0.08em; color: var(--muted); text-transform: uppercase; margin-top: 6px; }
+      .indice { margin-top: 24px; padding: 24px; border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); }
+      .indice-titulo { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+      .indice h2 { margin: 0; font-family: 'Orbitron', sans-serif; font-size: 16px; letter-spacing: 0.2em; color: var(--accent); text-transform: uppercase; }
+      .indice ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 8px; }
+      .indice a { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(34,211,238,0.2); background: rgba(34,211,238,0.05); color: var(--text); text-decoration: none; font-size: 15px; }
+      .indice a:hover, .indice a:focus-visible { border-color: var(--accent); background: rgba(34,211,238,0.12); }
+      .num { font-family: 'Orbitron', sans-serif; font-size: 12px; color: var(--teal); }
+      .btn-sec { min-height: 44px; padding: 8px 16px; border-radius: 8px; border: 1px solid rgba(34,211,238,0.4); background: transparent; color: var(--text); font: 500 14px 'Roboto', sans-serif; cursor: pointer; }
+      .btn-sec:hover, .btn-sec:focus-visible { border-color: var(--accent); }
+      .campo { margin-top: 24px; padding: 28px; border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); scroll-margin-top: 16px; }
+      .campo-cabecalho { display: flex; align-items: baseline; gap: 14px; }
+      .campo-num { font-family: 'Orbitron', sans-serif; font-size: 14px; color: var(--teal); }
+      .campo h2 { margin: 0; font-family: 'Orbitron', sans-serif; font-size: clamp(18px, 2.4vw, 22px); color: var(--accent); }
+      .campo-intro { color: var(--muted); margin: 12px 0 20px; max-width: 820px; }
+      .servicos { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr)); gap: 12px; align-items: start; }
+      .servico { border-radius: 10px; border: 1px solid var(--line); background: rgba(15,23,42,0.6); }
+      .servico[open] { border-color: rgba(34,211,238,0.35); }
+      .servico summary { cursor: pointer; list-style: none; padding: 14px 16px; min-height: 44px; font-weight: 500; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+      .servico summary::-webkit-details-marker { display: none; }
+      .servico summary::after { content: "+"; font-family: 'Orbitron', sans-serif; color: var(--accent); font-size: 18px; flex: 0 0 auto; }
+      .servico[open] summary::after { content: "−"; }
+      .servico summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 10px; }
+      .servico-corpo { padding: 0 16px 16px; }
+      .servico-corpo p { margin: 0 0 12px; color: var(--muted); font-size: 15px; }
+      .entregas-titulo { font-family: 'Orbitron', sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); margin-bottom: 6px; }
+      .entregas { margin: 0; padding-left: 18px; font-size: 15px; }
+      .entregas li { margin: 4px 0; }
+      .cta { margin-top: 32px; text-align: center; padding: 48px 24px; border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); }
+      .cta h2 { margin-top: 0; font-family: 'Orbitron', sans-serif; color: var(--accent); }
+      .cta p { max-width: 680px; margin: 0 auto 20px; color: var(--muted); }
+      .btn { display: inline-block; padding: 0.75rem 2rem; border-radius: 4px; text-decoration: none; font-weight: 600; background: var(--accent); color: #04121a; }
+      .btn:hover, .btn:focus-visible { opacity: 0.85; }
+      footer { color: var(--muted); text-align: center; margin-top: 32px; font-size: 14px; }
+      @media (max-width: 600px) { header { padding: 24px; } .campo { padding: 20px; } }
+    </style>
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <div class="wrap">
+      <nav class="topo" aria-label="Navegação">
+        <a href="index.html">← Lexiograph</a>
+        <a href="#contato">Solicitar proposta →</a>
+      </nav>
+
+      <header>
+        <img src="assets/logo-removebg.png" alt="Glifo Lexiograph" />
+        <div class="header-texto">
+          <h1>Design Full Service</h1>
+          <div class="tagline">Design - Full Service | espaço infinito de possível</div>
+          <div class="neon-line"></div>
+          <div class="lead">
+            <p>A Lexiograph atua como estúdio de design full service, isto é, assume o ciclo completo de um projeto visual: da pesquisa que fundamenta as decisões à publicação do produto final. Essa integração elimina as perdas que ocorrem quando estratégia, criação e implementação ficam a cargo de fornecedores distintos.</p>
+            <p>A oferta organiza-se em 15 campos de atuação, cada um com 5 serviços. Os serviços podem ser contratados isoladamente ou combinados em projetos completos. Em cada item, descrevemos o que o serviço é e quais entregas concretas o cliente recebe.</p>
+          </div>
+          <div class="numeros">
+            <div class="numero">15<small>campos</small></div>
+            <div class="numero">75<small>serviços</small></div>
+          </div>
+        </div>
+      </header>
+
+      <section class="indice" aria-labelledby="indice-titulo">
+        <div class="indice-titulo">
+          <h2 id="indice-titulo">Campos de atuação</h2>
+          <button type="button" class="btn-sec" id="alternar">Abrir todos os serviços</button>
+        </div>
+        <ol>
+          <li><a href="#pesquisa"><span class="num">01</span>Pesquisa e Descoberta</a></li>
+          <li><a href="#estrategia"><span class="num">02</span>Estratégia de Design</a></li>
+          <li><a href="#identidade"><span class="num">03</span>Identidade Visual</a></li>
+          <li><a href="#grafico"><span class="num">04</span>Design Gráfico e Editorial</a></li>
+          <li><a href="#web"><span class="num">05</span>Web Design</a></li>
+          <li><a href="#uxui"><span class="num">06</span>UX/UI de Produtos Digitais</a></li>
+          <li><a href="#design-systems"><span class="num">07</span>Design Systems</a></li>
+          <li><a href="#front-end"><span class="num">08</span>Desenvolvimento Front-end</a></li>
+          <li><a href="#redes-sociais"><span class="num">09</span>Design para Redes Sociais</a></li>
+          <li><a href="#motion"><span class="num">10</span>Motion Design e Vídeo</a></li>
+          <li><a href="#ilustracao"><span class="num">11</span>Ilustração e Imagem</a></li>
+          <li><a href="#apresentacoes"><span class="num">12</span>Apresentações e Documentos</a></li>
+          <li><a href="#campanhas"><span class="num">13</span>Design para Campanhas</a></li>
+          <li><a href="#linguagem"><span class="num">14</span>Linguagem e Escrita</a></li>
+          <li><a href="#qualidade"><span class="num">15</span>Qualidade e Evolução</a></li>
+        </ol>
+      </section>
+
+      <section id="pesquisa" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">01</span>
+          <h2>Pesquisa e Descoberta</h2>
+        </div>
+        <p class="campo-intro">Todo projeto de design parte de uma compreensão rigorosa do contexto em que a marca ou o produto circula. Nesta etapa, reunimos evidências sobre o cliente, seus públicos e seu mercado, de modo que as decisões visuais posteriores se apoiem em dados, e não em preferências pessoais.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Briefing e Imersão</summary>
+            <div class="servico-corpo">
+              <p>Conduzimos entrevistas e oficinas com a equipe do cliente para compreender objetivos, restrições e expectativas. O briefing, documento que registra o escopo e os critérios de sucesso do projeto, torna-se a referência comum de todas as etapas seguintes.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Roteiro e condução de entrevistas internas</li>
+                <li>Documento de briefing validado</li>
+                <li>Mapa de objetivos, restrições e critérios de sucesso</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Pesquisa com Usuários</summary>
+            <div class="servico-corpo">
+              <p>Investigamos como as pessoas efetivamente percebem e utilizam a marca ou o produto. Combinamos entrevistas, questionários e observação de uso, pois o comportamento real frequentemente diverge do comportamento declarado.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Plano de pesquisa e recrutamento</li>
+                <li>Relatório de achados com citações e padrões</li>
+                <li>Recomendações priorizadas para o design</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Análise Visual de Concorrentes</summary>
+            <div class="servico-corpo">
+              <p>Examinamos a linguagem visual dos concorrentes diretos e indiretos: cores, tipografia, tom e estrutura de interfaces. O objetivo é identificar convenções do setor e, sobretudo, espaços de diferenciação ainda não ocupados.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Painel comparativo de identidades e interfaces</li>
+                <li>Matriz de posicionamento visual</li>
+                <li>Síntese de oportunidades de diferenciação</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Benchmarking e Referências</summary>
+            <div class="servico-corpo">
+              <p>Benchmarking é a prática de estudar soluções de referência, inclusive fora do setor do cliente, para elevar o padrão do projeto. Selecionamos e comentamos referências que orientam a direção estética e funcional do trabalho.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Curadoria comentada de referências</li>
+                <li>Painel semântico (moodboard)</li>
+                <li>Diretrizes iniciais de linguagem visual</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Auditoria de Marca e Interfaces</summary>
+            <div class="servico-corpo">
+              <p>Inventariamos todos os pontos de contato existentes, como site, redes sociais, materiais impressos e documentos. A auditoria revela inconsistências e lacunas que comprometem a percepção de qualidade da marca.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Inventário de pontos de contato</li>
+                <li>Relatório de inconsistências por canal</li>
+                <li>Lista de correções prioritárias</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section id="estrategia" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">02</span>
+          <h2>Estratégia de Design</h2>
+        </div>
+        <p class="campo-intro">A estratégia de design traduz os achados da pesquisa em decisões estruturais. Nesse sentido, definimos o que a marca deve comunicar, para quem e com que prioridade, antes de qualquer produção visual, o que reduz retrabalho e assegura coerência ao longo do tempo.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Posicionamento Visual</summary>
+            <div class="servico-corpo">
+              <p>Definimos o lugar que a marca deve ocupar na percepção do público e o modo como a linguagem visual expressa esse lugar. O posicionamento orienta todas as escolhas estéticas subsequentes.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Declaração de posicionamento visual</li>
+                <li>Atributos de marca traduzidos em critérios visuais</li>
+                <li>Mapa de território visual</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Arquitetura de Marca</summary>
+            <div class="servico-corpo">
+              <p>A arquitetura de marca organiza a relação entre uma marca principal e suas submarcas, produtos ou linhas de serviço. Essa estrutura é decisiva em ecossistemas com várias frentes, pois evita sobreposição e confusão de identidades.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Diagrama de arquitetura de marca</li>
+                <li>Regras de nomeação e hierarquia</li>
+                <li>Recomendações de convivência entre marcas</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Conceito Criativo</summary>
+            <div class="servico-corpo">
+              <p>O conceito criativo é a ideia central que unifica as peças de um projeto. Desenvolvemos e justificamos rotas conceituais alternativas, para que a escolha final seja deliberada e fundamentada.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Duas a três rotas conceituais</li>
+                <li>Racional escrito de cada rota</li>
+                <li>Conceito aprovado e documentado</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Personas e Jornadas</summary>
+            <div class="servico-corpo">
+              <p>Personas são perfis representativos dos públicos, construídos a partir da pesquisa. As jornadas descrevem as etapas que essas pessoas percorrem ao interagir com a marca, evidenciando onde o design pode reduzir atritos.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Fichas de personas baseadas em evidências</li>
+                <li>Mapas de jornada por persona</li>
+                <li>Pontos de atrito e oportunidades identificados</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Roadmap de Design</summary>
+            <div class="servico-corpo">
+              <p>O roadmap é o plano temporal que ordena as entregas de design segundo prioridade e dependência. Ele permite ao cliente acompanhar a evolução do projeto e alinhar investimentos ao calendário do negócio.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Cronograma de entregas por fase</li>
+                <li>Matriz de prioridades</li>
+                <li>Marcos de validação com o cliente</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section id="identidade" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">03</span>
+          <h2>Identidade Visual</h2>
+        </div>
+        <p class="campo-intro">A identidade visual é o conjunto sistemático de elementos gráficos que torna uma marca reconhecível. Mais do que um logotipo isolado, trata-se de um sistema de signos coerente, capaz de se aplicar a contextos muito diversos sem perder unidade.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Logomarca e Logotipo</summary>
+            <div class="servico-corpo">
+              <p>Distinguimos dois elementos complementares. O símbolo, ou logomarca, é o sinal gráfico da marca. O logotipo é a escrita estilizada do nome. Desenvolvemos ambos e suas combinações, com versões para fundos claros, escuros e tamanhos reduzidos.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Símbolo e logotipo em versões principal e alternativas</li>
+                <li>Arquivos vetoriais e em alta resolução</li>
+                <li>Estudo de redução e área de proteção</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Tipografia e Paleta de Cores</summary>
+            <div class="servico-corpo">
+              <p>Selecionamos famílias tipográficas e cores que expressam o posicionamento e funcionam bem em telas e impressos. A paleta é verificada quanto ao contraste, de modo a garantir legibilidade para pessoas com baixa visão.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Famílias tipográficas e hierarquia de uso</li>
+                <li>Paleta com códigos de cor para telas e impressão</li>
+                <li>Verificação de contraste para acessibilidade</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Sistema Gráfico e Grafismos</summary>
+            <div class="servico-corpo">
+              <p>Grafismos são elementos visuais de apoio, como padrões, texturas e formas, que ampliam o repertório da marca. Eles permitem variar as peças sem depender sempre do logotipo.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Biblioteca de grafismos e padrões</li>
+                <li>Regras de composição e grid</li>
+                <li>Exemplos de aplicação</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Aplicações da Marca</summary>
+            <div class="servico-corpo">
+              <p>Demonstramos a identidade em uso nos principais suportes do cliente. As aplicações funcionam como prova de conceito, pois revelam se o sistema resiste às condições reais de uso.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Imagens de perfil e capas para redes sociais</li>
+                <li>Assinatura de e-mail e papelaria básica</li>
+                <li>Simulações em suportes físicos e digitais</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Manual da Marca</summary>
+            <div class="servico-corpo">
+              <p>O manual da marca reúne as regras de uso da identidade em um documento de consulta. Ele garante que fornecedores e equipes internas apliquem a marca corretamente, mesmo sem a presença do estúdio.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Manual em arquivo digital navegável</li>
+                <li>Usos corretos e incorretos ilustrados</li>
+                <li>Pacote de arquivos organizado para download</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section id="grafico" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">04</span>
+          <h2>Design Gráfico e Editorial</h2>
+        </div>
+        <p class="campo-intro">O design gráfico e editorial abrange as peças em que a organização da informação no espaço é determinante. Em publicações, embalagens ou sinalização, a hierarquia visual orienta a leitura e, por conseguinte, a compreensão da mensagem.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Papelaria Corporativa</summary>
+            <div class="servico-corpo">
+              <p>Desenvolvemos as peças institucionais de uso cotidiano, como cartões de visita, papel timbrado, envelopes e modelos de documentos. Embora simples, essas peças consolidam a percepção de profissionalismo da marca.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Cartão de visita, papel timbrado e envelope</li>
+                <li>Arquivos prontos para gráfica</li>
+                <li>Modelos editáveis para uso interno</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Diagramação Editorial</summary>
+            <div class="servico-corpo">
+              <p>A diagramação é a distribuição de textos e imagens nas páginas de livros, revistas, relatórios e e-books. Um projeto editorial bem resolvido torna documentos extensos agradáveis e fáceis de percorrer.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Projeto gráfico editorial (grid, estilos e hierarquia)</li>
+                <li>Diagramação completa da publicação</li>
+                <li>Arquivos para impressão e versão digital</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Embalagens e Rótulos</summary>
+            <div class="servico-corpo">
+              <p>A embalagem é, muitas vezes, o primeiro contato físico do consumidor com o produto. Projetamos embalagens e rótulos que conciliam apelo visual, informações obrigatórias e viabilidade de produção.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Estudo de forma e estrutura</li>
+                <li>Arte final de embalagem e rótulo</li>
+                <li>Acompanhamento de prova gráfica</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Sinalização e Ambientação</summary>
+            <div class="servico-corpo">
+              <p>A sinalização orienta pessoas em espaços físicos, como escritórios, eventos e lojas. A ambientação aplica a identidade ao espaço, fortalecendo a experiência de marca no ambiente construído.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Projeto de sinalização e orientação espacial</li>
+                <li>Peças de ambientação</li>
+                <li>Especificações técnicas para produção</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Materiais para Eventos</summary>
+            <div class="servico-corpo">
+              <p>Produzimos o conjunto visual de eventos, feiras e congressos. A consistência entre as peças reforça a presença da marca e facilita a orientação dos participantes.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Banners, painéis de fundo e credenciais</li>
+                <li>Programação e materiais impressos</li>
+                <li>Peças digitais de divulgação</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section id="web" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">05</span>
+          <h2>Web Design</h2>
+        </div>
+        <p class="campo-intro">O web design projeta a forma como sites apresentam informação e conduzem o visitante. Como o site costuma ser o centro da presença digital de uma organização, sua estrutura, legibilidade e desempenho têm impacto direto sobre a credibilidade da marca.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Arquitetura de Informação</summary>
+            <div class="servico-corpo">
+              <p>A arquitetura de informação define como o conteúdo de um site é organizado, nomeado e interligado. Uma boa arquitetura permite que o visitante encontre o que procura sem esforço, o que reduz abandonos.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Mapa do site</li>
+                <li>Estrutura de navegação e menus</li>
+                <li>Inventário e classificação de conteúdos</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Wireframes</summary>
+            <div class="servico-corpo">
+              <p>Wireframes são esboços estruturais das páginas, sem cores nem imagens finais. Eles permitem discutir a disposição do conteúdo antes do acabamento visual, quando as mudanças ainda são baratas.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Wireframes das páginas principais</li>
+                <li>Versões para computador e celular</li>
+                <li>Rodada de revisão com o cliente</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Interface de Sites</summary>
+            <div class="servico-corpo">
+              <p>Aplicamos a identidade visual às páginas, definindo cores, tipografia, imagens e componentes. O resultado é o layout final de cada página, pronto para ser implementado.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Layouts finais de alta fidelidade</li>
+                <li>Estados de interação (cursor, foco, erro)</li>
+                <li>Arquivos organizados para desenvolvimento</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Landing Pages</summary>
+            <div class="servico-corpo">
+              <p>Uma landing page é uma página dedicada a um único objetivo, como captar contatos ou divulgar um lançamento. Seu design elimina distrações e conduz o visitante à ação desejada.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Estrutura persuasiva da página</li>
+                <li>Layout responsivo final</li>
+                <li>Variações para testes de desempenho</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Design Responsivo</summary>
+            <div class="servico-corpo">
+              <p>O design responsivo adapta o layout a telas de diferentes tamanhos, do celular ao monitor amplo. Como a maior parte do tráfego atual vem de dispositivos móveis, essa adaptação é condição de usabilidade, e não um acessório.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Pontos de quebra definidos por tamanho de tela</li>
+                <li>Layouts adaptados para celular e tablet</li>
+                <li>Regras de comportamento dos componentes</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section id="uxui" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">06</span>
+          <h2>UX/UI de Produtos Digitais</h2>
+        </div>
+        <p class="campo-intro">UX (User Experience, experiência do usuário) designa a qualidade da interação de uma pessoa com um produto. UI (User Interface, interface do usuário) designa a camada visual e interativa por meio da qual essa interação acontece. Em aplicativos e plataformas, ambas determinam se o produto será adotado ou abandonado.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Fluxos e Jornadas de Uso</summary>
+            <div class="servico-corpo">
+              <p>Mapeamos o caminho que o usuário percorre para realizar cada tarefa no produto. A análise dos fluxos revela etapas desnecessárias, ambiguidades e pontos de abandono.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Diagramas de fluxo por tarefa</li>
+                <li>Mapa de telas e estados</li>
+                <li>Recomendações de simplificação</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Prototipagem Navegável</summary>
+            <div class="servico-corpo">
+              <p>Um protótipo navegável simula o produto antes de ele existir em código. Ele permite testar ideias com usuários reais e validar decisões com baixo custo.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Protótipo clicável das jornadas principais</li>
+                <li>Roteiro de demonstração</li>
+                <li>Ajustes após validação</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Design de Aplicativos</summary>
+            <div class="servico-corpo">
+              <p>Projetamos interfaces de aplicativos móveis e plataformas web, respeitando as convenções de cada sistema operacional. O objetivo é unir identidade de marca e familiaridade de uso.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Telas finais de alta fidelidade</li>
+                <li>Componentes e estados de interface</li>
+                <li>Especificações para desenvolvimento</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Testes de Usabilidade</summary>
+            <div class="servico-corpo">
+              <p>Nos testes de usabilidade, observamos pessoas utilizando o produto para cumprir tarefas definidas. As dificuldades observadas indicam com precisão o que precisa ser corrigido.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Plano e roteiro de teste</li>
+                <li>Sessões moderadas ou remotas</li>
+                <li>Relatório de problemas por gravidade</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Acessibilidade Digital</summary>
+            <div class="servico-corpo">
+              <p>A acessibilidade garante que pessoas com deficiência consigam usar o produto. Adotamos como referência as WCAG (Web Content Accessibility Guidelines, Diretrizes de Acessibilidade para Conteúdo Web), padrão internacional do setor.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Auditoria de acessibilidade</li>
+                <li>Correções de contraste, foco e navegação por teclado</li>
+                <li>Checklist de conformidade</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section id="design-systems" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">07</span>
+          <h2>Design Systems</h2>
+        </div>
+        <p class="campo-intro">Um design system é uma biblioteca organizada de padrões visuais, componentes e regras que sustenta todos os produtos de uma organização. Ele substitui decisões repetidas por decisões documentadas, o que acelera a produção e preserva a coerência à medida que a equipe cresce.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Tokens de Design</summary>
+            <div class="servico-corpo">
+              <p>Tokens de design são variáveis nomeadas que guardam decisões básicas, como cores, tamanhos de fonte e espaçamentos. Ao centralizar esses valores, uma alteração feita em um único lugar se propaga por todos os produtos.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Conjunto de tokens nomeados</li>
+                <li>Temas claro e escuro</li>
+                <li>Exportação para uso em código</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Biblioteca de Componentes</summary>
+            <div class="servico-corpo">
+              <p>Componentes são peças reutilizáveis de interface, como botões, formulários e cartões. A biblioteca reúne essas peças com suas variações e estados, prontas para compor novas telas.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Componentes com variações e estados</li>
+                <li>Biblioteca organizada na ferramenta de design</li>
+                <li>Exemplos de composição</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Documentação</summary>
+            <div class="servico-corpo">
+              <p>A documentação explica quando e como usar cada componente e padrão. Sem ela, o sistema tende a ser aplicado de forma inconsistente e perde sua utilidade.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Guia de uso por componente</li>
+                <li>Princípios e boas práticas</li>
+                <li>Página de referência navegável</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Handoff para Desenvolvimento</summary>
+            <div class="servico-corpo">
+              <p>Handoff é a passagem do design para a equipe que vai programá-lo. Preparamos especificações precisas para que a implementação reproduza fielmente o que foi projetado.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Especificações de medidas e comportamentos</li>
+                <li>Ativos exportados e nomeados</li>
+                <li>Sessão de alinhamento com desenvolvedores</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Governança do Sistema</summary>
+            <div class="servico-corpo">
+              <p>A governança define quem pode alterar o design system, como as mudanças são propostas e como são comunicadas. Esse processo mantém o sistema vivo sem que ele se fragmente.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Fluxo de contribuição e aprovação</li>
+                <li>Registro de versões e mudanças</li>
+                <li>Rotina de revisão periódica</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section id="front-end" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">08</span>
+          <h2>Desenvolvimento Front-end</h2>
+        </div>
+        <p class="campo-intro">O front-end é a parte do software que o usuário vê e com a qual interage diretamente no navegador. Ao incluir sua implementação, o serviço deixa de terminar no arquivo de design e passa a entregar o produto publicado, o que caracteriza o full service em sentido pleno.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Implementação de Sites</summary>
+            <div class="servico-corpo">
+              <p>Convertemos os layouts aprovados em código funcional, fiel ao design e responsivo. Adotamos tecnologias leves e padrões abertos, de modo a facilitar a manutenção futura.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Site implementado e responsivo</li>
+                <li>Código versionado em repositório</li>
+                <li>Revisão visual página a página</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Integração com CMS</summary>
+            <div class="servico-corpo">
+              <p>Um CMS (Content Management System, sistema de gerenciamento de conteúdo) permite que o próprio cliente edite textos e imagens do site sem programar. Integramos o site a essa ferramenta quando a atualização frequente é necessária.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Configuração do CMS</li>
+                <li>Modelos de conteúdo editáveis</li>
+                <li>Orientação para a equipe editorial</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Performance e SEO Técnico</summary>
+            <div class="servico-corpo">
+              <p>SEO (Search Engine Optimization, otimização para mecanismos de busca) é o conjunto de práticas que melhora a visibilidade do site no Google e em buscadores semelhantes. Na camada técnica, otimizamos velocidade de carregamento, estrutura de código e metadados.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Otimização de imagens e carregamento</li>
+                <li>Metadados e marcação estruturada</li>
+                <li>Relatório de desempenho antes e depois</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Domínio e Hospedagem</summary>
+            <div class="servico-corpo">
+              <p>Configuramos o domínio e a hospedagem do site, incluindo o certificado de segurança que ativa o endereço com HTTPS (Hypertext Transfer Protocol Secure, protocolo seguro de transferência de hipertexto). O cliente recebe o site no ar, sem precisar lidar com a infraestrutura.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Configuração do domínio próprio</li>
+                <li>Publicação com certificado de segurança</li>
+                <li>Documentação de acessos</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Manutenção Evolutiva</summary>
+            <div class="servico-corpo">
+              <p>Após a publicação, mantemos o site atualizado, seguro e alinhado à evolução da marca. A manutenção evolutiva inclui ajustes, novas páginas e correções periódicas.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Atualizações e correções periódicas</li>
+                <li>Inclusão de novas seções</li>
+                <li>Monitoramento de disponibilidade</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section id="redes-sociais" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">09</span>
+          <h2>Design para Redes Sociais</h2>
+        </div>
+        <p class="campo-intro">As redes sociais exigem produção visual frequente e reconhecível. Por essa razão, priorizamos sistemas e modelos reutilizáveis, que permitem publicar com regularidade sem sacrificar a consistência da marca.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Capas e Imagens de Perfil</summary>
+            <div class="servico-corpo">
+              <p>Adaptamos a identidade aos formatos de perfil e capa de cada plataforma, como LinkedIn, Instagram e Facebook. Essas imagens são a primeira impressão da marca em cada canal.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Imagem de perfil otimizada para recorte circular</li>
+                <li>Capas nas dimensões de cada rede</li>
+                <li>Versões para datas e campanhas</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Templates de Posts</summary>
+            <div class="servico-corpo">
+              <p>Templates são modelos editáveis que padronizam os posts. Eles reduzem o tempo de produção e garantem que todas as publicações pareçam parte de um mesmo sistema.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Conjunto de modelos por tipo de conteúdo</li>
+                <li>Arquivos editáveis para a equipe</li>
+                <li>Guia rápido de uso</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Carrosséis</summary>
+            <div class="servico-corpo">
+              <p>Carrosséis são sequências de imagens deslizáveis em um único post. Por permitirem desenvolver uma ideia em etapas, são especialmente adequados a conteúdos explicativos e educativos.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Roteiro visual do carrossel</li>
+                <li>Lâminas finalizadas</li>
+                <li>Modelo reutilizável</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Stories e Reels</summary>
+            <div class="servico-corpo">
+              <p>Stories são publicações verticais e temporárias. Reels são vídeos curtos verticais. Ambos exigem linguagem própria, pensada para consumo rápido em tela cheia no celular.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Modelos de stories e capas de destaque</li>
+                <li>Peças gráficas para reels</li>
+                <li>Sequências para campanhas</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Kit de Lançamento Social</summary>
+            <div class="servico-corpo">
+              <p>Reunimos as peças necessárias para lançar uma marca, produto ou campanha nas redes sociais de modo coordenado. O kit assegura que todos os canais comuniquem a mesma mensagem ao mesmo tempo.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Peças para todos os formatos e redes</li>
+                <li>Calendário de publicação do lançamento</li>
+                <li>Textos de apoio para as legendas</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section id="motion" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">10</span>
+          <h2>Motion Design e Vídeo</h2>
+        </div>
+        <p class="campo-intro">Motion design é o design gráfico em movimento. A animação acrescenta à linguagem visual a dimensão do tempo, o que permite explicar processos, conduzir a atenção e conferir personalidade à marca de forma que imagens estáticas não alcançam.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Animação de Logo</summary>
+            <div class="servico-corpo">
+              <p>Animamos o símbolo e o logotipo para aberturas de vídeo, apresentações e redes sociais. A animação reforça a identidade e cria uma assinatura reconhecível em conteúdos audiovisuais.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Animação principal da marca</li>
+                <li>Versões curta e longa</li>
+                <li>Arquivos em formatos para vídeo e web</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Vídeos Explicativos</summary>
+            <div class="servico-corpo">
+              <p>Vídeos explicativos traduzem produtos, serviços ou conceitos complexos em narrativas visuais breves. São particularmente eficazes para tecnologias de difícil compreensão imediata.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Roteiro e storyboard (roteiro desenhado quadro a quadro)</li>
+                <li>Animação completa com trilha</li>
+                <li>Versões para site e redes sociais</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Motion para Redes</summary>
+            <div class="servico-corpo">
+              <p>Produzimos peças animadas curtas para redes sociais, como posts em movimento e vinhetas. O movimento aumenta a retenção da atenção no fluxo de conteúdo.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Posts e vinhetas animados</li>
+                <li>Modelos de animação reutilizáveis</li>
+                <li>Exportação nos formatos de cada rede</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Edição de Vídeo</summary>
+            <div class="servico-corpo">
+              <p>Editamos gravações brutas, como entrevistas, palestras e depoimentos, aplicando a identidade visual da marca. A edição inclui cortes, legendas, letreiros e tratamento de cor.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Vídeo editado com identidade aplicada</li>
+                <li>Legendas para acessibilidade</li>
+                <li>Cortes curtos para redes sociais</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Microinterações</summary>
+            <div class="servico-corpo">
+              <p>Microinterações são pequenas animações de interface, como a resposta de um botão ao clique. Elas comunicam ao usuário que sua ação foi reconhecida, tornando o produto mais claro e agradável.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Especificação de microinterações</li>
+                <li>Protótipos animados</li>
+                <li>Parâmetros de tempo e curva para desenvolvimento</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section id="ilustracao" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">11</span>
+          <h2>Ilustração e Imagem</h2>
+        </div>
+        <p class="campo-intro">A imagem é um dos vetores mais potentes da identidade de uma marca. Trabalhamos tanto com produção autoral quanto com ferramentas de inteligência artificial, sempre sob o princípio human in the loop, segundo o qual a decisão final e a curadoria permanecem com uma pessoa.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Ilustração Autoral</summary>
+            <div class="servico-corpo">
+              <p>Criamos ilustrações exclusivas, alinhadas à identidade da marca. A ilustração autoral diferencia a comunicação, pois substitui imagens genéricas de banco por um repertório próprio.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Ilustrações exclusivas no estilo da marca</li>
+                <li>Guia de estilo de ilustração</li>
+                <li>Arquivos vetoriais e rasterizados</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Iconografia</summary>
+            <div class="servico-corpo">
+              <p>Iconografia é o conjunto de ícones de uma marca ou produto. Ícones consistentes entre si facilitam a navegação e reforçam a unidade visual das interfaces.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Conjunto de ícones sob medida</li>
+                <li>Regras de construção e grid</li>
+                <li>Arquivos vetoriais prontos para uso</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Direção de Fotografia</summary>
+            <div class="servico-corpo">
+              <p>Definimos a linguagem fotográfica da marca e orientamos as produções. A direção abrange enquadramento, luz, cenário e tratamento, garantindo que as fotos dialoguem com a identidade.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Guia de linguagem fotográfica</li>
+                <li>Roteiro de produção (shot list)</li>
+                <li>Acompanhamento e seleção das imagens</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Tratamento de Imagem</summary>
+            <div class="servico-corpo">
+              <p>Tratamos e editamos fotografias e imagens para uniformizar cor, luz e qualidade. O tratamento consistente faz com que imagens de origens diversas pareçam pertencer a um mesmo conjunto.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Correção de cor e luz</li>
+                <li>Recortes e remoção de fundo</li>
+                <li>Exportação otimizada por canal</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Imagem com IA e Curadoria Humana</summary>
+            <div class="servico-corpo">
+              <p>Utilizamos IA (inteligência artificial) generativa para explorar e produzir imagens, sempre com seleção, ajuste e validação humanos. Esse método combina a velocidade da máquina com o critério estético e ético de quem projeta.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Exploração de alternativas visuais com IA</li>
+                <li>Curadoria e refinamento manual</li>
+                <li>Registro de origem e direitos das imagens</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section id="apresentacoes" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">12</span>
+          <h2>Apresentações e Documentos</h2>
+        </div>
+        <p class="campo-intro">Apresentações e documentos são frequentemente os artefatos decisivos em negociações, captações e relações institucionais. Quando bem projetados, transformam informação densa em argumento claro e, por conseguinte, em decisão.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Pitch Decks</summary>
+            <div class="servico-corpo">
+              <p>O pitch deck é a apresentação usada para expor um negócio a investidores ou parceiros. Estruturamos a narrativa e o design de modo que cada slide sustente um passo do argumento.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Estrutura narrativa do pitch</li>
+                <li>Deck finalizado e editável</li>
+                <li>Versão para envio por e-mail</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Apresentações Institucionais</summary>
+            <div class="servico-corpo">
+              <p>Desenvolvemos apresentações que comunicam quem a organização é, o que faz e como trabalha. Elas servem a reuniões comerciais, eventos e integração de novos colaboradores.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Apresentação institucional completa</li>
+                <li>Slides modulares reutilizáveis</li>
+                <li>Versões em português e inglês, quando necessário</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Relatórios e Infográficos</summary>
+            <div class="servico-corpo">
+              <p>Infográficos são representações visuais de dados e processos. Aplicados a relatórios, tornam números e análises compreensíveis de imediato, inclusive para leitores não especialistas.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Projeto gráfico do relatório</li>
+                <li>Gráficos e infográficos sob medida</li>
+                <li>Versões impressa e digital</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Propostas Comerciais</summary>
+            <div class="servico-corpo">
+              <p>A proposta comercial é o documento que formaliza uma oferta ao cliente. Um design claro valoriza o conteúdo, facilita a comparação e transmite rigor profissional.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Modelo de proposta comercial</li>
+                <li>Seções de escopo, cronograma e investimento</li>
+                <li>Arquivo editável para a equipe</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Templates de Documentos</summary>
+            <div class="servico-corpo">
+              <p>Criamos modelos de documentos e slides com a identidade aplicada, para uso cotidiano da equipe. Os templates evitam que cada pessoa improvise seu próprio formato.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Modelos de slides, documentos e planilhas</li>
+                <li>Estilos predefinidos</li>
+                <li>Orientações de uso</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section id="campanhas" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">13</span>
+          <h2>Design para Campanhas</h2>
+        </div>
+        <p class="campo-intro">Este campo reúne a produção visual a serviço das ações de marketing. A estratégia, a compra de mídia e a análise de resultados ficam a cargo da área de marketing, enquanto o design assegura que cada peça seja eficaz, coerente e fiel à marca.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Criativos para Anúncios</summary>
+            <div class="servico-corpo">
+              <p>Criativos são as peças visuais veiculadas em anúncios pagos, em plataformas como Google, Meta e LinkedIn. Produzimos variações que permitem comparar o desempenho de diferentes abordagens.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Peças nos formatos de cada plataforma</li>
+                <li>Variações para testes</li>
+                <li>Adaptações conforme os resultados</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Peças de Campanha</summary>
+            <div class="servico-corpo">
+              <p>Desenvolvemos o conjunto visual de uma campanha a partir de um conceito único. Esse conjunto garante que a mensagem seja reconhecida em qualquer canal em que apareça.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Conceito visual da campanha</li>
+                <li>Desdobramento em peças digitais e impressas</li>
+                <li>Guia de aplicação da campanha</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Layout de E-mail Marketing</summary>
+            <div class="servico-corpo">
+              <p>Projetamos modelos de e-mail compatíveis com os principais programas de correio, que costumam exibir o mesmo e-mail de formas distintas. O layout prioriza leitura rápida e uma chamada para ação evidente.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Modelos de newsletter e e-mail promocional</li>
+                <li>Versões testadas em diferentes clientes de e-mail</li>
+                <li>Blocos reutilizáveis</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Banners e Mídia Display</summary>
+            <div class="servico-corpo">
+              <p>Mídia display é o anúncio gráfico exibido em sites e aplicativos, geralmente em formatos padronizados. Produzimos os banners em todos os tamanhos exigidos pelas redes de anúncio.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Banners em todos os formatos padrão</li>
+                <li>Versões estáticas e animadas</li>
+                <li>Arquivos otimizados para carregamento rápido</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Materiais de Ponto de Venda</summary>
+            <div class="servico-corpo">
+              <p>O ponto de venda é o local onde o consumidor decide a compra, físico ou digital. Os materiais para esse ambiente, como expositores e cartazes, influenciam a decisão no momento final.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Cartazes, displays e expositores</li>
+                <li>Arte final para produção</li>
+                <li>Adaptações para lojas virtuais</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section id="linguagem" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">14</span>
+          <h2>Linguagem e Escrita</h2>
+        </div>
+        <p class="campo-intro">A identidade de uma marca também se expressa em palavras. Nome, tom e textos de interface compõem a dimensão verbal da marca, que deve ser tão coerente e projetada quanto sua dimensão visual.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Naming e Tagline</summary>
+            <div class="servico-corpo">
+              <p>Naming é o processo de criação de nomes para marcas, produtos ou serviços. A tagline é a frase curta que acompanha o nome e sintetiza a proposta da marca.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Lista de nomes com racional</li>
+                <li>Verificação preliminar de disponibilidade</li>
+                <li>Tagline alinhada ao posicionamento</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Tom de Voz</summary>
+            <div class="servico-corpo">
+              <p>O tom de voz define como a marca fala: seu grau de formalidade, seu vocabulário e sua atitude. Um tom bem definido torna a marca reconhecível mesmo quando o logotipo não aparece.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Atributos de tom de voz</li>
+                <li>Exemplos do que dizer e do que evitar</li>
+                <li>Adaptações por canal</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>UX Writing</summary>
+            <div class="servico-corpo">
+              <p>UX writing é a redação dos textos que aparecem dentro de produtos digitais, como botões, mensagens de erro e instruções. Textos claros nesses pontos reduzem dúvidas e erros de uso.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Revisão dos textos de interface</li>
+                <li>Padrões de mensagens e rótulos</li>
+                <li>Glossário de termos do produto</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Copy para Web</summary>
+            <div class="servico-corpo">
+              <p>Copy é o texto com finalidade persuasiva ou informativa. Escrevemos os textos de sites e landing pages em sintonia com a arquitetura de informação e o design das páginas.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Textos completos das páginas</li>
+                <li>Títulos e chamadas para ação</li>
+                <li>Metadescrições para buscadores</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Guia Editorial</summary>
+            <div class="servico-corpo">
+              <p>O guia editorial reúne as regras de escrita da marca, como grafia de termos, uso de siglas e padrões de formatação. Ele assegura uniformidade entre textos produzidos por pessoas diferentes.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Guia editorial em documento de consulta</li>
+                <li>Regras de grafia, siglas e formatação</li>
+                <li>Exemplos comentados</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section id="qualidade" class="campo">
+        <div class="campo-cabecalho">
+          <span class="campo-num">15</span>
+          <h2>Qualidade e Evolução</h2>
+        </div>
+        <p class="campo-intro">O design não se encerra na entrega. Marcas e produtos evoluem, e a qualidade do sistema visual depende de medição, cuidado contínuo e capacitação das pessoas que o utilizam no dia a dia.</p>
+        <div class="servicos">
+          <details class="servico">
+            <summary>Métricas de Experiência</summary>
+            <div class="servico-corpo">
+              <p>Definimos indicadores que mostram se o design cumpre seu papel, como taxa de conclusão de tarefas e satisfação dos usuários. A medição transforma impressões subjetivas em evidências para decisão.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Definição de indicadores de experiência</li>
+                <li>Painel de acompanhamento</li>
+                <li>Relatórios periódicos com recomendações</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Testes A/B de Design</summary>
+            <div class="servico-corpo">
+              <p>No teste A/B, duas versões de uma página ou peça são exibidas a grupos distintos de pessoas. A comparação dos resultados indica, com base em dados, qual versão funciona melhor.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Hipóteses e variações de design</li>
+                <li>Acompanhamento do teste</li>
+                <li>Análise e recomendação da versão vencedora</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Gestão de Ativos da Marca</summary>
+            <div class="servico-corpo">
+              <p>Organizamos e mantemos atualizado o acervo de arquivos da marca, como logotipos, imagens e modelos. Um acervo centralizado evita o uso de versões antigas ou incorretas.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Repositório organizado de ativos</li>
+                <li>Controle de versões</li>
+                <li>Atualizações conforme a marca evolui</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Treinamento de Equipes</summary>
+            <div class="servico-corpo">
+              <p>Capacitamos as equipes do cliente para aplicar a identidade e usar os modelos corretamente. O treinamento amplia a autonomia interna e preserva a qualidade da marca no cotidiano.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Oficina prática sobre a identidade</li>
+                <li>Material de apoio</li>
+                <li>Canal de dúvidas no período pós-treinamento</li>
+              </ul>
+            </div>
+          </details>
+          <details class="servico">
+            <summary>Fluxos de Aprovação</summary>
+            <div class="servico-corpo">
+              <p>Estruturamos o processo pelo qual peças e alterações são revisadas e aprovadas antes da publicação. Fluxos claros reduzem retrabalho e evitam que materiais inconsistentes cheguem ao público.</p>
+              <div class="entregas-titulo">Entregas</div>
+              <ul class="entregas">
+                <li>Mapa do fluxo de aprovação</li>
+                <li>Checklist de revisão por tipo de peça</li>
+                <li>Papéis e responsabilidades definidos</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section id="contato" class="cta">
+        <h2>Vamos desenhar o seu projeto?</h2>
+        <p>Indique os campos e serviços que interessam à sua organização. A partir disso, preparamos uma proposta sob medida, com escopo, cronograma e investimento.</p>
+        <a href="mailto:globaldeeptechecosystem@hubstry.dev?subject=Proposta%20Lexiograph%20Design%20Full%20Service" class="btn">Solicitar proposta →</a>
+      </section>
+
+      <footer>
+        © Lexiograph — Licenciado sob <a href="https://github.com/guilherme-machado-ceo/lexiograph-gramatica-semiotica/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">Apache License 2.0</a>.
+      </footer>
+    </div>
+    <script type="module">
+      const botao = document.getElementById('alternar');
+      const itens = Array.from(document.querySelectorAll('details.servico'));
+      botao.addEventListener('click', () => {
+        const abrir = itens.some((d) => !d.open);
+        itens.forEach((d) => { d.open = abrir; });
+        botao.textContent = abrir ? 'Fechar todos os serviços' : 'Abrir todos os serviços';
+      });
+    </script>
+  </body>
+</html>

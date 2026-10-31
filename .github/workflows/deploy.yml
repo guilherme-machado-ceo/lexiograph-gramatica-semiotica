@@ -39,6 +39,8 @@ jobs:
           set -e
           test -f dist/index.html
           test -f dist/lex.html
+          test -f dist/servicos.html
+          grep -q "Design Full Service" dist/servicos.html
           grep -q "Lexiograph" dist/index.html
           grep -q "Lex: Governança Digital" dist/lex.html
 
